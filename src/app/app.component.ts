@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'IF GOT IT RIGHT, IMLEMENTatioN of CAROUSEL still should be here!!';
+  //title = 'Auction App';
+  title = '';
 }

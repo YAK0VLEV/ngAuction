@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 
 import { ProductService } from './shared/product.service';
+import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,20 @@ import { ProductService } from './shared/product.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //routing // adds the routes configuration to @NgModule()
   ],
-  providers: [ProductService],
+  providers: [ // registered providers for dependency injection
+    ProductService,
+    { // either history API-based navigation (PathLocationStrategy - Angular's default)
+      provide: APP_BASE_HREF,
+      useValue: '/mypath'
+    },
+    { // or hash-based navigation (if we want to use # in URL)
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
