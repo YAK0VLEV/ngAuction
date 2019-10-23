@@ -14,6 +14,7 @@ import { StarsComponent } from './stars/stars.component';
 
 import { ProductService } from './shared/product.service';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { Error404Component } from './error404/error404.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/
     ProductItemComponent,
     ProductDetailComponent,
     SearchComponent,
-    StarsComponent
+    StarsComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
