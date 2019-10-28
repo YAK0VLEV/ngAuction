@@ -1,8 +1,8 @@
-:host {
-  display: block;
+:host { /* Applies styles to the carousel component, and not to its internals */
+  display: block; /* The component as a block, which takes the entire width */
   margin-bottom: 10px;
 }
 
 img {
-  width: 100%;
+  width: 100%; /* Image should take the entire width of th carousel */
 }
