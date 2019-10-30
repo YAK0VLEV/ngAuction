@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../shared/product.service';
 
+/**
+ * A product Item.
+ */
 @Component({
   selector: 'nga-product-item',
   templateUrl: './product-item.component.html',
@@ -8,9 +11,12 @@ import { Product } from '../shared/product.service';
 })
 export class ProductItemComponent {
 
-  constructor() { }
+  /**
+   * Represents a product object. This input property will receive the product 
+   * from the parent component.
+   */
+  @Input() private product: Product;
 
-  // this input property will receive the product from the parent component
-  @Input() product: Product;
+  constructor() { }
 
 }

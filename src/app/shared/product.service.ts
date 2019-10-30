@@ -58,6 +58,9 @@ const products = [
   }
 ];
 
+/**
+ * The product representation.
+ */
 export class Product {
   constructor(
     public id: number,
@@ -69,10 +72,20 @@ export class Product {
   ) { }
 }
 
+/**
+ * The product service. ..... needs full description ......
+ */
 export class ProductService {
 
   constructor() { }
 
+  /**
+   * Returns existing products.
+   *
+   * @returns The product array.
+   *
+   * @alpha
+   */
   getProducts(): Product[] {
     return products.map(product => new Product(
       product.id,
@@ -84,6 +97,14 @@ export class ProductService {
     ));
   }
 
+  /**
+   * Returns a product object if matches the given product ID.
+   *
+   * @param productId - The product ID.
+   * @returns The Product object.
+   *
+   * @alpha
+   */
   getProductById(productId: number): Product {
     return products.find(product => product.id === productId);
   }

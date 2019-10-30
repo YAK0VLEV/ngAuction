@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Product details.
+ */
 @Component({
   selector: 'nga-product-detail',
   templateUrl: './product-detail.component.html',
