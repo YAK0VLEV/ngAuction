@@ -17,10 +17,12 @@ export class StarsComponent implements OnInit {
   @Input() private count: number = 5;
   /**
    * Represents a given rating for a product providing by the parent component.
+   * Stores the average product rating that determines how many stars should be 
+   * filled with color.
    */
   @Input() private rating: number = 0;
   /**
-   * Represents an array of stars.
+   * Represents an array of stars. True is a colored star.
    */
   private stars: boolean[] = [];
 

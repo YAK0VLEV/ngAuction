@@ -63,11 +63,29 @@ const products = [
  */
 export class Product {
   constructor(
+    /**
+     * Represents the product ID.
+     */
     public id: number,
+    /**
+     * Represents the product title.
+     */
     public title: string,
+    /**
+     * Represents the product price.
+     */
     public price: number,
+    /**
+     * Represents the product rating.
+     */
     public rating: number,
+    /**
+     * Represents the product description.
+     */
     public description: string,
+    /**
+     * Represents the product categories.
+     */
     public categories: string[]
   ) { }
 }
