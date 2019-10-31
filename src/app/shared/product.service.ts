@@ -44,7 +44,7 @@ const products = [
     'id': 4,
     'title': 'Fifth Product',
     'price': 94.99,
-    'rating': 5,
+    'rating': 2.9,
     'description': 'This is a short description: ... ',
     'categories': ['electronics', 'hardware']
   },

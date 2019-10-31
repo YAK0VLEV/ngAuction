@@ -22,7 +22,7 @@ export class StarsComponent implements OnInit {
    */
   @Input() private rating: number = 0;
   /**
-   * Represents an array of stars. True is a colored star.
+   * Represents an array of stars. True represents the empty star(not colored).
    */
   private stars: boolean[] = [];
 
@@ -30,7 +30,7 @@ export class StarsComponent implements OnInit {
 
   ngOnInit() {
 
-    for (let i = 0; i <= this.count; i++) {
+    for (let i = 0; i < this.count; i++) {
       this.stars.push(i > this.rating);
     }
   }
