@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * A carousel of products.
+ */
 @Component({
   selector: 'nga-carousel',
   templateUrl: './carousel.component.html',

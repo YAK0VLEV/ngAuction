@@ -1,1 +1,16 @@
-<p>product-item works!</p>
+<div class="thumbnail">
+  <img src="http://placehold.it/320x150">
+  
+  <div class="caption">
+    <h4>{{ product.price | currency }}</h4>
+    <!-- the product title now is a link to navigate to ProductDetailComponent -->
+    <h4><a [routerLink]="['/products', product.id]">{{ product.title }}</a></h4>
+    <p>{{ product.description }}</p>
+  </div>
+  
+  <div class="ratings">
+    <!-- <nga-stars [rating]="product.rating" [count]="9"></nga-stars> -->
+    <nga-stars [rating]="product.rating"></nga-stars>
+  </div>
+
+</div>

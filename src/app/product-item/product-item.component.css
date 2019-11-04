@@ -1,0 +1,8 @@
+.ratings {
+  color: darkred;
+}
+
+/* Ensures that images won't overlap each other */
+img {
+  width: 100%;
+}

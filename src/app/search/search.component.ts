@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * A product search component.
+ */
 @Component({
   selector: 'nga-search',
   templateUrl: './search.component.html',
