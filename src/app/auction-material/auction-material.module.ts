@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// importing only AM modules we need for the app
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -15,9 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule // since this module is featured, importing the CommonModule
   ],
-  exports: [
+  exports: [ // reexport modules, so we can use them in other modules of the app
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
