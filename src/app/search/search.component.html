@@ -1,3 +1,41 @@
+
+<form #f="ngForm">
+
+  <mat-form-field>
+    <input matInput
+          type="text"
+          placeholder="product title"
+          name="title" 
+          ngModel>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput
+          type="number"
+          placeholder="product price"
+          name="price" 
+          ngModel>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="category"
+                name="category"
+                ngModel>
+      <mat-option *ngFor="let category of categories"
+                    [value]="category">{{ category }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button 
+          color="accent"
+          type="submit">
+    <mat-icon>search</mat-icon>SEACH
+  </button>
+
+</form>
+
+<!--
 <form name="searchForm">
   <div class="form-group">
     <label for="productTitle">Product Title:</label>
@@ -21,3 +59,4 @@
     class="btn btn-primary btn-block">Search</button>
   </div>
 </form>
+-->
