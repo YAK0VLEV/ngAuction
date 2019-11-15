@@ -1,8 +1,17 @@
 .ratings {
   color: darkred;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* Ensures that images won't overlap each other */
+mat-card-title {
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Ensures that images won't overlap each other 
 img {
   width: 100%;
 }
+*/
