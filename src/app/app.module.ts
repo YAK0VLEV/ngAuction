@@ -15,6 +15,8 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { Error404Component } from './error404/error404.component'
+import { AuctionMaterialModule } from './auction-material/auction-material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { Error404Component } from './error404/error404.component'
   ],
   imports: [
     BrowserModule,
+    AuctionMaterialModule,
     AppRoutingModule,
+    FormsModule
     //routing // adds the routes configuration to @NgModule()
   ],
   providers: [ // registered providers for dependency injection
